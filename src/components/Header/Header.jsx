@@ -14,12 +14,14 @@ const Header = () => {
                             <div>
                                 {/* Logo */}
                                 <div className="flex items-center gap-3">
-                                    <div>
-                                        <img src={Logo} alt="" className="w-20" />
-                                    </div>
-                                    <div>
-                                        <p className="text-2xl md:text-3xl capitalize">vr <span className="font-bold text-black">world</span></p>
-                                    </div>
+                                    <a href="#" className="flex items-center gap-3">
+                                        <div>
+                                            <img src={Logo} alt="" className="w-20" />
+                                        </div>
+                                        <div>
+                                            <p className="text-2xl md:text-3xl capitalize">vr <span className="font-bold text-black">world</span></p>
+                                        </div>
+                                    </a>
                                 </div>
                                 {/* Desktop Menu */}
 
