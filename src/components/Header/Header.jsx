@@ -38,18 +38,18 @@ const Header = () => {
                                     </ul>
                                 </div>
                                 {/* Mobile Navbar */}
-                                <div className="flex md:hidden">
+                                <div className="block md:hidden">
                                     <div>
-                                        <div>
+                                        <div className="toggle">
                                             <FaBarsStaggered className="text-xl" />
                                         </div>
-                                        <div>
-                                            <ul className="capitalize items-center gap-8 text-xl font-semibold hidden">
-                                                <li><a href="#" className="hover:text-primary">home</a></li>
-                                                <li><a href="#" className="hover:text-primary">products</a></li>
-                                                <li><a href="#" className="hover:text-primary">pricing</a></li>
-                                                <li><a href="#" className="hover:text-primary">contact</a></li>
-                                                <li><a href="#"><MdDarkMode className="text-2xl" /></a></li>
+                                        <div className="relative mobile-menu">
+                                            <ul className="capitalize items-center gap-8 text-xl font-semibold block md:hidden bg-black text-white absolute top-6 right-[120px] p-6 text-center z-50">
+                                                <li className="pb-5"><a href="#" className="hover:text-primary">home</a></li>
+                                                <li className="pb-5"><a href="#" className="hover:text-primary">products</a></li>
+                                                <li className="pb-5"><a href="#" className="hover:text-primary">pricing</a></li>
+                                                <li className="pb-5"><a href="#" className="hover:text-primary">contact</a></li>
+                                                <li className="pb-5"><a href="#"><MdDarkMode className="text-2xl" /></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -59,6 +59,7 @@ const Header = () => {
                     </div>
                 </nav>
             </header>
+           
         </>
     )
 }
